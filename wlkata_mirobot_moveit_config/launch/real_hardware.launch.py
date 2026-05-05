@@ -132,7 +132,7 @@ def generate_launch_description():
     )
 
     delayed_driver = TimerAction(
-        period=ParameterValue(driver_start_delay_sec, value_type=float),
+        period=driver_start_delay_sec,
         actions=[mirobot_driver_node],
     )
 
