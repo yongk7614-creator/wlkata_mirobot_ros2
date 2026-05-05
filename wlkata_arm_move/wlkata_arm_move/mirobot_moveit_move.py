@@ -23,8 +23,7 @@ class MirobotGcodeDriver(Node):
     def __init__(self):
         super().__init__("mirobot_gcode_driver")
 
-        # ── 파라미터 선언 ──────────────────────────────────────────────
-        self.declare_parameter(
+         self.declare_parameter(
             "action_name",
             "mirobot_group_controller/follow_joint_trajectory",
         )
@@ -99,7 +98,6 @@ class MirobotGcodeDriver(Node):
                 "auto_home=False: homing skipped."
             )
 
-        # ── FollowJointTrajectory 액션 서버 ───────────────────────────
         self._cb_group = ReentrantCallbackGroup()
         self._action_server = ActionServer(
             self,
