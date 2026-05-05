@@ -25,9 +25,7 @@
 <exec_depend>rviz_default_plugins</exec_depend>
 <exec_depend>warehouse_ros_mongo</exec_depend>
 <exec_depend>wlkata_mirobot_description</exec_depend>
-<!--  real_hardware.launch.py 에서 wlkata_arm_move 노드를 실행하기 위해 필요  -->
 <exec_depend>wlkata_arm_move</exec_depend>
-<!--  launch 파일에서 Node, IncludeLaunchDescription 등을 사용하기 위해 필요  -->
 <exec_depend>launch</exec_depend>
 <exec_depend>launch_ros</exec_depend>
 <exec_depend>ament_index_python</exec_depend>
